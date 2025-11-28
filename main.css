@@ -11,9 +11,15 @@
     --background-blur: blur(12px);
 
     --glass-bg: #ffffff10;
-    --glass-bg-hover: #ffffff20;
-    --glass-bg-click: #ffffff30;
-    --glass-border: #ffffff40;
+
+    --glass-border: #00000010;
+
+    --glass-bg-gradient-light: rgba(255, 255, 255, 0.08);
+    --glass-bg-gradient-dark: rgba(0, 0, 0, 0.1);
+    --glass-hover-gradient-light: rgba(255, 255, 255, 0.1);
+    --glass-hover-gradient-dark: rgba(30, 30, 30, 0.2);
+    --glass-click-gradient-light: rgba(255, 255, 255, 0.12);
+    --glass-click-gradient-dark: rgba(50, 50, 50, 0.2);
 
     --bg-gradient-light: rgba(45, 45, 45, 1);
     --bg-gradient-dark: rgba(25, 25, 25, 1);
@@ -36,9 +42,9 @@ body, html {
 
     /* Background gradient */
     background: var(--bg-gradient-light);
-    background: -webkit-linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
-    background: -moz-linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
-    background: linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+    background: -webkit-linear-gradient(140deg, var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+    background: -moz-linear-gradient(140deg, var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+    background: linear-gradient(140deg, var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
 }
 
 a {
@@ -55,11 +61,25 @@ a {
     
     display: flex;
     width: fit-content; height: fit-content;
-    background-color: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+
+    /* background-color: var(--glass-bg); */
+    background: var(--glass-bg-gradient-light);
+    background: linear-gradient(140deg, var(--glass-bg-gradient-light) 0%, var(--glass-bg-gradient-dark) 100%);
+
+    border: 2px solid var(--glass-border);
     padding: var(--padding);
     gap: var(--gap);
     backdrop-filter: var(--background-blur);
+}
+
+.glass.clickable:hover {
+    background: var(--glass-hover-gradient-light);
+    background: linear-gradient(140deg, var(--glass-hover-gradient-light) 0%, var(--glass-hover-gradient-dark) 100%);
+}
+
+.glass.clickable:active {
+    background: var(--glass-click-gradient-light);
+    background: linear-gradient(140deg, var(--glass-click-gradient-light) 0%, var(--glass-click-gradient-dark) 100%);
 }
 /* #endregion */
 
