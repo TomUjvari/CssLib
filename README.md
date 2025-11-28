@@ -1,5 +1,5 @@
 # CssLib
-My personal library of reusable CSS classes.
+My personal library of reusable CSS classes.  
 Check the **examples** folder to see HTML examples.
 
 ## What each file does
