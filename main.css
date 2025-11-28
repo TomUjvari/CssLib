@@ -1,0 +1,135 @@
+/* #region Variables */
+:root {
+    --text-main: #eaeaea;
+    --text-mid: #cecece;
+    --text-sub: #aeaeae;
+
+    --rounding-light: 8px;
+    --rounding-medium: 16px;
+    --rounding-heavy: 24px;
+
+    --background-blur: blur(12px);
+
+    --glass-bg: #ffffff10;
+    --glass-bg-hover: #ffffff20;
+    --glass-bg-click: #ffffff30;
+    --glass-border: #ffffff40;
+
+    --bg-gradient-light: rgba(45, 45, 45, 1);
+    --bg-gradient-dark: rgba(25, 25, 25, 1);
+}
+/* #endregion */
+
+/* #region Main */
+* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+body, html {
+    margin: 0; padding: 0;
+    height: 100vh; width: 100vw;
+
+    /* Font */
+    font-size: 1rem;
+    font-weight: 400; /* 100 ~ 900 */
+    color: var(--text-main);
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto; font-style: normal; font-variation-settings: "wdth" 100;
+
+    /* Background gradient */
+    background: var(--bg-gradient-light);
+    background: -webkit-linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+    background: -moz-linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+    background: linear-gradient(140deg,var(--bg-gradient-light) 0%, var(--bg-gradient-dark) 100%);
+}
+
+a {
+    color: var(--text-mid);
+    text-decoration: none;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Div Styles */
+.glass {
+    --gap: 1rem;
+    --padding: 1rem;
+    
+    display: flex;
+    width: fit-content; height: fit-content;
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: var(--padding);
+    gap: var(--gap);
+    backdrop-filter: var(--background-blur);
+}
+/* #endregion */
+
+/* #region Positioning */
+.centered { display: flex; justify-content: center; align-items: center; text-align: center;}
+.centered-main { display: flex; justify-content: center; }
+.centered-sec { display: flex; align-items: center; }
+.col { display: flex; flex-direction: column; }
+/* #endregion */
+
+/* #region Grid */
+.auto-grid {
+    --min-col-size: 300px;
+    --col-gap: 1rem;
+    --row-gap: 1rem;
+
+    display: grid;
+    column-gap: var(--col-gap); row-gap: var(--row-gap);
+    grid-template-columns: repeat(auto-fill, minmax(min(var(--min-col-size), 100%), 1fr));
+}
+
+/* Same as above but if there are too few items, they will stretch to fill the space */
+.auto-grid-fill {
+    --min-col-size: 300px;
+    --col-gap: 1rem;
+    --row-gap: 1rem;
+
+    display: grid;
+    column-gap: var(--col-gap); row-gap: var(--row-gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-col-size), 100%), 1fr));
+}
+/* #endregion */
+
+/* #region Clickable */
+.clickable {
+    transition-duration: 0.2s;
+
+    &:hover {
+        transition-duration: 0.2s;
+        cursor: pointer;
+        background-color: var(--glass-bg-hover);
+    }
+
+    &:active {
+        transition-duration: 0.05s;
+        background-color: var(--glass-bg-click);
+    }
+}
+/* #endregion */
+
+/* #region rounding */
+.rounded-light { border-radius: var(--rounding-light); }
+.rounded-medium { border-radius: var(--rounding-medium); }
+.rounded-heavy { border-radius: var(--rounding-heavy); }
+/* #endregion */
+
+/* #region Glow */
+.text-glow {
+    --color: #ffffff60;
+    --glow: 12px;
+
+    text-shadow: 0px 0px var(--glow) var(--color);
+}
+
+.div-glow {
+    --color: #ffffff60;
+    --glow: 12px;
+    
+    -webkit-box-shadow:0px 0px var(--glow) 0px var(--color);
+    -moz-box-shadow: 0px 0px var(--glow) 0px var(--color);
+    box-shadow: 0px 0px var(--glow) 0px var(--color);
+}
+/* #endregion */
