@@ -1,14 +1,12 @@
 nav {
-    --background: #7d7d7d1a;
-    --border: #00000010;
+    background-color: #7d7d7d1a;
     height: 6rem;
     width: fit-content;
     border-radius: var(--rounding-medium, 16px);
     backdrop-filter: var(--background-blur, blur(16px));
 
     position: fixed; display: flex;
-    background-color: var(--background);
-    border: 2px solid var(--border);
+    box-shadow: var(--glass-shadow);
     margin-top: 1vw;
     padding-left: 1rem; padding-right: 1rem;
     left: 50%;

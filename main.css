@@ -23,6 +23,8 @@
 
     --bg-gradient-light: rgba(45, 45, 45, 1);
     --bg-gradient-dark: rgba(25, 25, 25, 1);
+
+    --glass-shadow: 0px 0px 16px -3px #00000030;
 }
 /* #endregion */
 
@@ -62,11 +64,11 @@ a {
     display: flex;
     width: fit-content; height: fit-content;
 
-    /* background-color: var(--glass-bg); */
+    background-color: var(--glass-bg);
     background: var(--glass-bg-gradient-light);
     background: linear-gradient(140deg, var(--glass-bg-gradient-light) 0%, var(--glass-bg-gradient-dark) 100%);
+    box-shadow: var(--glass-shadow);
 
-    border: 2px solid var(--glass-border);
     padding: var(--padding);
     gap: var(--gap);
     backdrop-filter: var(--background-blur);
