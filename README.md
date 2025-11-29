@@ -1,6 +1,6 @@
 # CssLib
 My personal library of reusable CSS classes, inspired by [Bootstrap](https://getbootstrap.com) with more modern designs and a far more explicit syntax.  
-This projet is still in early development and lacks many feature compared to competitors.
+This projet is still in early development and lacks many feature compared to competitors.  
 Check the **examples** folder to see examples on how to use it.
 
 
