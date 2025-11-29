@@ -6,7 +6,7 @@ Check the **examples** folder to see examples on how to use it.
 
 ## How to use
 It is highly recommended you put the entire page content into a div with the `wrapper` class.  
-Here's a rundown of how to use the included classes:
+Here's a rundown of how to use the included classes. unless specified otherwise, all classes are meant to be applied to `div` elements.
 
 ### Positioning
 You can position a div's children by adding the following classes to the container:
@@ -23,19 +23,19 @@ You can position a div's children by adding the following classes to the contain
 -  **rounded-max** - Rounds to the maximum without turning the div into an ellipsis
 -  **rounded-ellipsis** - Rounds the div into an ellipsis
 
-## Div Styles
+### Div Styles
 -  **glass** - Gives a glassmorphic design to the div
 -  **clickable** - Makes a glass div react on hover and click
 
-## Image Cropping
--  **crop-square** - Crops the image into a square
--  **crop-circle** - Crops the image into a circle
+### Image Cropping
+-  **crop-square** (`img`) - Crops the image into a square
+-  **crop-circle** (`img`) - Crops the image into a circle
 
-## Buttons
--  **button-neutral**
--  **button-green**
--  **button-blue**
--  **button-red**
+### Buttons
+-  **button-neutral** (`a`)
+-  **button-green** (`a`)
+-  **button-blue** (`a`)
+-  **button-red** (`a`)
 
 
 ## What each file does
