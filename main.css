@@ -154,10 +154,16 @@ h3 {
 .col.middle { justify-content: center; }
 .col.bottom { justify-content: right; }
 
-.space-equally {
-    display: flex;
-    gap: 1rem;
-    & > * { flex: 1; }
+/* Space Equally */
+.row.space-equally {
+    --cols: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+}
+.col.space-equally {
+    --rows: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--rows), 1fr);
 }
 /* #endregion */
 
