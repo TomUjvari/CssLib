@@ -1,5 +1,5 @@
 nav {
-    box-shadow: #7d7d7d1a;
+    background-color: #7d7d7d10;
     width: 6rem;
     height: fit-content;
     border-radius: var(--rounding-medium, 16px);
@@ -7,7 +7,7 @@ nav {
     gap: 1rem;
 
     position: fixed; display: flex; flex-direction: column;
-    box-shadow: var(--glass-shadow);
+    box-shadow: var(--glass-shadow-strong);
     margin-left: 1vw;
     padding-top: 1rem; padding-bottom: 1rem;
     top: 50%;
@@ -18,6 +18,7 @@ nav {
 nav a {
     height: 4rem;
     font-size: 2.5rem;
+    position: relative;
 
     display: flex; justify-content: center; align-items: center;
     width: 100%;
@@ -27,4 +28,33 @@ nav a {
         color: var(--text-main);
         text-shadow: 0px 0px 16px #000000a0;
     }
+}
+
+/* Tooltip */
+nav a::after {
+    content: attr(tooltip);
+    position: absolute;
+    left: 100%; /* Horizontal Positioning */
+    
+    /* Appearance */
+    display: flex;
+    width: fit-content; height: fit-content;
+
+    background-color: #2d2d2da0;
+    box-shadow: var(--glass-shadow);
+
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    border-radius: var(--rounding-medium);
+    white-space: nowrap;
+    backdrop-filter: var(--background-blur);
+    
+    /* Animation */
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.2s;
+}
+
+nav a:hover::after {
+    opacity: 1;
 }

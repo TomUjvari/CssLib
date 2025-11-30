@@ -34,6 +34,7 @@
     --background-blur: blur(12px);
 
     --glass-shadow: 0px 0px 16px -3px #00000030;
+    --glass-shadow-strong: 0px 0px 16px -3px #00000060;
 }
 /* #endregion */
 
