@@ -14,7 +14,10 @@ You can position a div's children by adding the following classes to the contain
 -  **left / right / center** - Horizontal alignment
 -  **top / bottom / middle** - Vertical alignment
 -  **centered** - Center everything at once
--  **space-equally** - All children take equal space (grid layout), set the amount of rows or columns with `--rows: x` and `--cols: x` in the style.
+-  **fill-w** - Sets width to 100%
+-  **fill-h** - Sets height to 100%
+-  **space-fill** - Children fill the container, roughly taking equal space (`flex: 1`)
+-  **space-equally** - All children take equal space (`grid`), set the amount of rows or columns with `--rows: x` and `--cols: x` in the style.
 -  **auto-grid** - Reponsive grid via auto-fill
 -  **auto-grid-fill** - Reponsive grid via auto-fit (the naming is confusing but 'fill' is more accurate to its behavior)
 

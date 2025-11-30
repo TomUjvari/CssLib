@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../navbar-horizontal.css">
+    <title>Form Example</title>
+
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .page-background {
+            width: 100vw; height: 100vh;
+            position: fixed;
+            background-image: url("resources/bg.png");
+            background-size: cover;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page-background"></div>
+
+    <nav>
+
+        <a href="index.html" tooltip="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+
+        <a href="form.html" tooltip="Form">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="index.html" tooltip="Placeholder">
+            <i class="fa-solid fa-video"></i>
+        </a>
+
+        <a href="index.html" tooltip="Placeholder">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="index.html" tooltip="Placeholder">
+            <i class="fa-solid fa-gear"></i>
+        </a>
+
+    </nav>
+
+    <div class="wrapper centered">
+
+        <form class="glass col centered rounded-medium">
+
+            <h2>Form Example</h2>
+
+            <input class="rounded-light fill-w" type="text" name="email"
+                placeholder="Email">
+
+            <div class="row fill-w fill-space" style="gap: 1rem;">
+                <input class="rounded-light" type="text" name="firstname"
+                    placeholder="First Name">
+
+                <input class="rounded-light" type="text" name="lastname"
+                    placeholder="Last Name">
+            </div>
+
+            <textarea class="rounded-light" name="message" cols="64" rows="16"
+                placeholder="Message"></textarea>
+
+            <button type="Submit" class="button-blue rounded-medium">Send Message</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
