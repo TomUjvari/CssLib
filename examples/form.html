@@ -55,28 +55,59 @@
     <div class="wrapper centered">
 
         <form class="glass col centered rounded-medium">
-
+        
             <h2>Form Example</h2>
+        
+            <div class="form-input-container">
+                <label for="email">Email</label>
+                <input class="rounded-light fill-w" type="text" name="email" placeholder="myadress@awesomesite.com">
+            </div>
+        
+            <div class="row fill-w" style="gap: 1rem;">
 
-            <input class="rounded-light fill-w" type="text" name="email"
-                placeholder="Email">
-
+                <div class="form-input-container">
+                    <label for="firstname">First Name</label>
+                    <input class="rounded-light" type="text" name="firstname" placeholder="John">
+                </div>
+        
+                <div class="form-input-container">
+                    <label for="lastname">Last Name</label>
+                    <input class="rounded-light" type="text" name="lastname" placeholder="Doe">
+                </div>
+                
+            </div>
+        
             <div class="row fill-w fill-space" style="gap: 1rem;">
-                <input class="rounded-light" type="text" name="firstname"
-                    placeholder="First Name">
-
-                <input class="rounded-light" type="text" name="lastname"
-                    placeholder="Last Name">
+        
+                <div class="form-input-container">
+                    <label for="birthdate">Birth Date</label>
+                    <input type="date" class="rounded-light" name="birthdate">
+                </div>
+        
+                <div class="form-input-container">
+                    <label for="gender">Gender</label>
+                    <select class="rounded-light" name="gender">
+                        <option value="" disabled hidden selected>Select</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="o">Prefer not to say</option>
+                    </select>
+                </div>
+        
             </div>
 
-            <textarea class="rounded-light" name="message" cols="64" rows="16"
-                placeholder="Message"></textarea>
-
+            <div class="form-input-container">
+                <label for="message">Message</label>
+                <textarea class="rounded-light" name="message" cols="64" rows="16" placeholder="Message"></textarea>
+            </div>
+        
             <button type="Submit" class="button-blue rounded-medium">Send Message</button>
-
+        
         </form>
 
     </div>
+
+    <script src="../form-select.js"></script>
 
 </body>
 

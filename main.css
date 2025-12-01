@@ -148,18 +148,18 @@ h3 {
 
 /* Positioning - Rows */
 .row { display: flex; flex-direction: row; }
-.row.left { justify-content: left; }
-.row.center { justify-content: center; }
-.row.right { justify-content: right; }
+.row.left { justify-content: left; text-align: left; }
+.row.center { justify-content: center; text-align: center; }
+.row.right { justify-content: right; text-align: right; }
 .row.top { align-items: start; }
 .row.middle { align-items: center; }
 .row.bottom { align-items: end; }
 
 /* Positioning - Columns */
 .col { display: flex; flex-direction: column; }
-.col.left { align-items: start; }
-.col.center { align-items: center; }
-.col.right { align-items: end; }
+.col.left { align-items: start; text-align: left; }
+.col.center { align-items: center; text-align: center; }
+.col.right { align-items: end; text-align: right; }
 .col.top { justify-content: left; }
 .col.middle { justify-content: center; }
 .col.bottom { justify-content: right; }
@@ -341,12 +341,24 @@ button { border: none; }
 /* #endregion */
 
 /* #region Forms */
-form > * { width: 100%; }
-input, textarea {
+form * { width: 100%; }
+input, textarea, select {
     background-color: #ffffff0a;
     border: 1px solid #ffffff20;
     color: var(--text-main);
     font-size: 1rem;
     padding: 0.5rem;
+}
+option { color: rgb(60, 60, 60); }
+
+.form-input-container {
+    display: flex; flex-direction: column;
+    justify-content: left; text-align: left;
+    gap: 0.3rem;
+
+    & > label {
+        color: var(--text-sub);
+        font-size: 1rem;
+    }
 }
 /* #endregion */

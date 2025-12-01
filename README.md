@@ -40,6 +40,8 @@ You can position a div's children by adding the following classes to the contain
 -  **button-blue** `<a>`
 -  **button-red** `<a>`
 
+### Forms
+-  **form-input-container** - `label` and `input`/`select`/`textbox` children are aligned one above the other, aligned to the left.
 
 ## What each file does
 -  **main.css** - Contains positioning and basic styling classes
