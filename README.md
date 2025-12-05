@@ -35,13 +35,14 @@ You can position a div's children by adding the following classes to the contain
 -  **crop-circle** `<img>` - Crops the image into a circle
 
 ### Buttons
--  **button-neutral** `<a>`
--  **button-green** `<a>`
--  **button-blue** `<a>`
--  **button-red** `<a>`
+-  **button-neutral**
+-  **button-green**
+-  **button-blue**
+-  **button-red**
 
 ### Forms
 -  **form-input-container** - `label` and `input`/`select`/`textbox` children are aligned one above the other, aligned to the left.
+-  **form-checkbox-container** - `label` and `input` children are next to eachother
 
 ## What each file does
 -  **main.css** - Contains positioning and basic styling classes
