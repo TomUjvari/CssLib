@@ -366,4 +366,16 @@ option { color: rgb(60, 60, 60); }
     width: fit-content;
     gap: 0.2rem;
 }
+
+@media (width < 600px) {
+    form { width: 100% !important; }
+    form > * { flex-direction: column !important; }
+    .form-checkbox-container {
+        flex-direction: row !important;
+        align-items: center;
+        & > input {
+            width: 2rem; height: 2rem;
+        }
+    }
+}
 /* #endregion */

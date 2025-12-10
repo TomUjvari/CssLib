@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../navbar-horizontal.css">
+    <link rel="stylesheet" href="../navbar.css">
     <title>Example</title>
 
     <!-- Fontawesome -->
@@ -30,25 +30,41 @@
 
     <nav>
 
-        <a href="index.html" tooltip="Home">
-            <i class="fa-solid fa-house"></i>
-        </a>
+        <div id="navbar-desktop">
 
-        <a href="form.html" tooltip="Form">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
+            <a href="index.html" tooltip="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
 
-        <a href="index.html" tooltip="Placeholder">
-            <i class="fa-solid fa-video"></i>
-        </a>
+            <a href="form.html" tooltip="Form">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
 
-        <a href="index.html" tooltip="Placeholder">
-            <i class="fa-solid fa-user"></i>
-        </a>
+            <a href="index.html" tooltip="Placeholder">
+                <i class="fa-solid fa-video"></i>
+            </a>
 
-        <a href="index.html" tooltip="Placeholder">
-            <i class="fa-solid fa-gear"></i>
-        </a>
+            <a href="index.html" tooltip="Placeholder">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="index.html" tooltip="Placeholder">
+                <i class="fa-solid fa-gear"></i>
+            </a>
+    
+        </div>
+
+        <div id="navbar-mobile">
+
+            <a href="index.html">
+                CSS Lib
+            </a>
+
+            <a href="index.html">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
 
     </nav>
 
@@ -61,7 +77,7 @@
             <br>Feel free to look into the HTML code to see how it works!
         </p>
 
-        <div class="row space-equally" style="--cols: 2; gap: 1rem;">
+        <div class="row space-equally" style="--cols: 2; gap: 1rem;">    
 
             <div>
                 <h2>Example grid</h2>
